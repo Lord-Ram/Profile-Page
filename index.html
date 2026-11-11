@@ -480,21 +480,19 @@ footer{padding:34px 0 44px;text-align:center;color:var(--ink-3);font-size:.85rem
   film.muted = true;
 
   function startFilm(){
-    if (reduce) return;
     const p = film.play();
     if (p && p.catch) p.catch(() => {});
   }
 
-  if (reduce) film.pause();
-  else {
-    startFilm();
-    // If the browser blocked autoplay, start on the first interaction instead.
-    ['pointerdown','touchstart','keydown','scroll'].forEach(ev =>
-      addEventListener(ev, () => { if (film.paused) startFilm(); }, {once:true, passive:true})
-    );
-    // Resume if the browser paused it when the tab was hidden.
-    document.addEventListener('visibilitychange', () => { if (!document.hidden && film.paused) startFilm(); });
-  }
+  startFilm();
+  film.addEventListener('canplay', () => { if (film.paused) startFilm(); });
+  film.addEventListener('pause', () => { if (!document.hidden) startFilm(); });
+  film.addEventListener('ended', () => { film.currentTime = 0; startFilm(); });
+  // If the browser blocked autoplay, start on the first interaction instead.
+  ['pointerdown','touchstart','keydown','scroll','mousemove'].forEach(ev =>
+    addEventListener(ev, () => { if (film.paused) startFilm(); }, {once:true, passive:true})
+  );
+  document.addEventListener('visibilitychange', () => { if (!document.hidden && film.paused) startFilm(); });
 
   if (reduce){ hero.classList.add('no-motion'); reveal(); }
   else { setTimeout(reveal, 1300); }
