@@ -181,6 +181,8 @@ footer{padding:34px 0 44px;text-align:center;color:var(--ink-3);font-size:.85rem
 @keyframes fade{from{opacity:0}}
 @keyframes pop{from{opacity:0;transform:translateY(24px) scale(.97)}}
 
+[data-href]{cursor:pointer}
+tr[data-href]:hover td{background:rgba(94,240,255,.08)}
 .note{position:fixed;z-index:120;left:22px;bottom:22px;max-width:min(420px,calc(100% - 44px));background:rgba(8,10,18,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:.78rem;line-height:1.5;color:var(--ink-2);animation:pop .6s var(--ease)}
 
 .note b{color:#fff}
@@ -301,13 +303,13 @@ footer{padding:34px 0 44px;text-align:center;color:var(--ink-3);font-size:.85rem
         <table>
           <thead class="caps"><tr><th>Date</th><th>Activity</th><th>What I did</th><th>Link</th></tr></thead>
           <tbody>
-            <tr><td>2026-09-16</td><td>HTML page with 10 tags</td><td>Built a page with my name, my details and an explanation of each of 10 HTML tags.</td><td><a href="#">Code</a></td></tr>
-            <tr><td>2026-09-30</td><td>Web page with only HTML tags</td><td>Name in <code>h1</code>, About me in <code>h2</code> + paragraph, Education with <code>ul</code> and <code>ol</code> nested lists, and an interesting-topic section with 5 images, 2 paragraphs, headings, colours and a source link.</td><td><a href="#">Code</a></td></tr>
-            <tr><td>2026-10-07</td><td>All HTML elements page</td><td>Page covering every element from the MDN HTML elements reference, each explained in my own words. Started The Odin Project: Intermediate HTML and CSS.</td><td><a href="#">Code</a></td></tr>
+            <tr><td>2026-09-16</td><td>HTML page with 10 tags</td><td>Built a page with my name, my details and an explanation of each of 10 HTML tags.</td><td><a href="https://github.com/Lord-Ram" target="_blank" rel="noopener noreferrer">Code</a></td></tr>
+            <tr><td>2026-09-30</td><td>Web page with only HTML tags</td><td>Name in <code>h1</code>, About me in <code>h2</code> + paragraph, Education with <code>ul</code> and <code>ol</code> nested lists, and an interesting-topic section with 5 images, 2 paragraphs, headings, colours and a source link.</td><td><a href="assignments/html-tags-page.html" target="_blank" rel="noopener noreferrer">Code</a></td></tr>
+            <tr><td>2026-10-07</td><td>All HTML elements page</td><td>Page covering every element from the MDN HTML elements reference, each explained in my own words. Started The Odin Project: Intermediate HTML and CSS.</td><td><a href="https://github.com/Lord-Ram" target="_blank" rel="noopener noreferrer">Code</a></td></tr>
             <tr><td>2026-10-14</td><td>Certificates, mini projects &amp; profile page</td><td>Merged all certificates into one PPT, merged all mini-project PPTs into one, made this profile page live on GitHub, and recorded a voice presentation of Intermediate HTML &amp; CSS.</td><td><a href="https://docs.google.com/presentation/d/1ovTlTk9HXq4olqtELt7EQrUyaoIyyhgk/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">PPT</a><a href="https://drive.google.com/file/d/1NpebuhxccI8HEYaIZmQ75Q5GZdKW0iO6/view?usp=drive_link" data-video="1NpebuhxccI8HEYaIZmQ75Q5GZdKW0iO6" target="_blank" rel="noopener noreferrer">Video</a></td></tr>
             <tr><td>2026-10-21</td><td>Odin presentation &amp; recording</td><td>Presentation and screen recording of Intermediate HTML &amp; CSS, plus the start of the JavaScript course (objects, constructors, Library, factory functions, Tic Tac Toe).</td><td><a href="https://docs.google.com/presentation/d/1ovTlTk9HXq4olqtELt7EQrUyaoIyyhgk/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">PPT</a><a href="https://drive.google.com/file/d/1NpebuhxccI8HEYaIZmQ75Q5GZdKW0iO6/view?usp=drive_link" data-video="1NpebuhxccI8HEYaIZmQ75Q5GZdKW0iO6" target="_blank" rel="noopener noreferrer">Video</a></td></tr>
             <tr><td>2026-10-28</td><td>JavaScript course recording &amp; Foundations</td><td>Screen recording of the JavaScript course, all projects uploaded to GitHub, and JavaScript Basics (Foundations) completed with a new presentation and recording.</td><td><a href="https://docs.google.com/presentation/d/1C59scHHgX_TIFMyYyUbAR7TCH3RRdQdX/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">PPT</a><a href="https://drive.google.com/file/d/1XUqEx8SYf85LHr6BxZA8zRig9bjFPoz5/view?usp=drive_link" data-video="1XUqEx8SYf85LHr6BxZA8zRig9bjFPoz5" target="_blank" rel="noopener noreferrer">Video</a></td></tr>
-            <tr><td>2026-11-04</td><td>Catch-up of previous task</td><td>Completed the outstanding recording, GitHub uploads and JavaScript Basics work.</td><td><a href="#">Video</a></td></tr>
+            <tr><td>2026-11-04</td><td>Catch-up of previous task</td><td>Completed the outstanding recording, GitHub uploads and JavaScript Basics work.</td><td><a href="https://drive.google.com/file/d/1XUqEx8SYf85LHr6BxZA8zRig9bjFPoz5/view?usp=drive_link" data-video="1XUqEx8SYf85LHr6BxZA8zRig9bjFPoz5" target="_blank" rel="noopener noreferrer">Video</a></td></tr>
             <tr><td>2026-11-11</td><td>Profile page update</td><td>Updated this profile page with all previous tasks, projects, recordings and homework.</td><td><a href="https://github.com/Lord-Ram" target="_blank" rel="noopener noreferrer">GitHub</a></td></tr>
           </tbody>
         </table>
@@ -321,31 +323,30 @@ footer{padding:34px 0 44px;text-align:center;color:var(--ink-3);font-size:.85rem
       <div class="head reveal"><h2>Past Projects</h2><p>Six projects from my GitHub repositories. Open the live version or read the code.</p></div>
 
       <h3 class="group caps reveal">From my GitHub repositories</h3>
-      <div class="row cert reveal"><h3>Library <span class="tag">CSS</span></h3><p>A book library where you add books, mark them as read, and remove them.</p>
+      <div class="row cert reveal" data-href="https://lord-ram.github.io/skeleton-git/"><h3>Library <span class="tag">CSS</span></h3><p>A book library where you add books, mark them as read, and remove them.</p>
         <div class="golinks"><a class="go caps" href="https://lord-ram.github.io/skeleton-git/" target="_blank" rel="noopener noreferrer">Live &#8599;</a><a class="go caps" href="https://github.com/Lord-Ram/skeleton-git" target="_blank" rel="noopener noreferrer">Code &#8599;</a></div></div>
-      <div class="row cert reveal"><h3>Tic Tac Toe <span class="tag">JavaScript</span></h3><p>The classic two-player game on a 3&times;3 board with win and draw detection.</p>
+      <div class="row cert reveal" data-href="https://lord-ram.github.io/Tic-Tac-toe/"><h3>Tic Tac Toe <span class="tag">JavaScript</span></h3><p>The classic two-player game on a 3&times;3 board with win and draw detection.</p>
         <div class="golinks"><a class="go caps" href="https://lord-ram.github.io/Tic-Tac-toe/" target="_blank" rel="noopener noreferrer">Live &#8599;</a><a class="go caps" href="https://github.com/Lord-Ram/Tic-Tac-toe" target="_blank" rel="noopener noreferrer">Code &#8599;</a></div></div>
-      <div class="row cert reveal"><h3>Calculator <span class="tag">JavaScript</span></h3><p>A working calculator built with JavaScript.</p>
+      <div class="row cert reveal" data-href="https://lord-ram.github.io/Odin-Calculator/"><h3>Calculator <span class="tag">JavaScript</span></h3><p>A working calculator built with JavaScript.</p>
         <div class="golinks"><a class="go caps" href="https://lord-ram.github.io/Odin-Calculator/" target="_blank" rel="noopener noreferrer">Live &#8599;</a><a class="go caps" href="https://github.com/Lord-Ram/Odin-Calculator" target="_blank" rel="noopener noreferrer">Code &#8599;</a></div></div>
-      <div class="row cert reveal"><h3>Restaurant Page <span class="tag">JavaScript</span></h3><p>A restaurant landing page built with JavaScript modules.</p>
+      <div class="row cert reveal" data-href="https://lord-ram.github.io/Project-Restaurant-Page/"><h3>Restaurant Page <span class="tag">JavaScript</span></h3><p>A restaurant landing page built with JavaScript modules.</p>
         <div class="golinks"><a class="go caps" href="https://lord-ram.github.io/Project-Restaurant-Page/" target="_blank" rel="noopener noreferrer">Live &#8599;</a><a class="go caps" href="https://github.com/Lord-Ram/Project-Restaurant-Page" target="_blank" rel="noopener noreferrer">Code &#8599;</a></div></div>
-      <div class="row cert reveal"><h3>Sign Up Form <span class="tag">CSS</span></h3><p>A responsive sign-up form with clean, styled inputs.</p>
+      <div class="row cert reveal" data-href="https://lord-ram.github.io/Odin-Project-Simple/"><h3>Sign Up Form <span class="tag">CSS</span></h3><p>A responsive sign-up form with clean, styled inputs.</p>
         <div class="golinks"><a class="go caps" href="https://lord-ram.github.io/Odin-Project-Simple/" target="_blank" rel="noopener noreferrer">Live &#8599;</a><a class="go caps" href="https://github.com/Lord-Ram/Odin-Project-Simple" target="_blank" rel="noopener noreferrer">Code &#8599;</a></div></div>
-      <div class="row cert reveal"><h3>Admin Dashboard <span class="tag">HTML</span></h3><p>A dashboard layout with a sidebar, header and content cards.</p>
+      <div class="row cert reveal" data-href="https://lord-ram.github.io/Fox-Dashboard/"><h3>Admin Dashboard <span class="tag">HTML</span></h3><p>A dashboard layout with a sidebar, header and content cards.</p>
         <div class="golinks"><a class="go caps" href="https://lord-ram.github.io/Fox-Dashboard/" target="_blank" rel="noopener noreferrer">Live &#8599;</a><a class="go caps" href="https://github.com/Lord-Ram/Fox-Dashboard" target="_blank" rel="noopener noreferrer">Code &#8599;</a></div></div>
 
       <p class="reveal" style="margin-top:18px"><a href="https://github.com/Lord-Ram?tab=repositories" target="_blank" rel="noopener noreferrer" style="color:var(--leaf);font-weight:600;border-bottom:1px solid var(--leaf2)">All repositories on GitHub &#8599;</a></p>
 
-      <h3 class="group caps reveal">Project documents (PDF / PPT)</h3>
+      <h3 class="group caps reveal">Project write-ups</h3>
       <div class="tbl reveal">
         <table>
-          <thead class="caps"><tr><th>Project</th><th>Summary</th><th>Documents</th></tr></thead>
+          <thead class="caps"><tr><th>Project</th><th>Summary</th><th>Repository</th></tr></thead>
           <tbody>
-            <!-- TODO: put your real files in a /projects folder and fix the file names -->
-            <tr><td>Library</td><td>Objects, constructors and DOM rendering.</td><td><a href="projects/library.pdf" target="_blank" rel="noopener noreferrer">PDF</a><a href="projects/library.pptx" target="_blank" rel="noopener noreferrer">PPT</a></td></tr>
-            <tr><td>Tic Tac Toe</td><td>Game logic with modules and factory functions.</td><td><a href="projects/tic-tac-toe.pdf" target="_blank" rel="noopener noreferrer">PDF</a><a href="projects/tic-tac-toe.pptx" target="_blank" rel="noopener noreferrer">PPT</a></td></tr>
-            <tr><td>Sign Up Form</td><td>Form styling, validation and responsive layout.</td><td><a href="projects/signup-form.pdf" target="_blank" rel="noopener noreferrer">PDF</a><a href="projects/signup-form.pptx" target="_blank" rel="noopener noreferrer">PPT</a></td></tr>
-            <tr><td>Dashboard</td><td>CSS Grid and Flexbox dashboard layout.</td><td><a href="projects/dashboard.pdf" target="_blank" rel="noopener noreferrer">PDF</a><a href="projects/dashboard.pptx" target="_blank" rel="noopener noreferrer">PPT</a></td></tr>
+            <tr data-href="https://github.com/Lord-Ram/skeleton-git"><td>Library</td><td>Objects, constructors and DOM rendering.</td><td><a href="https://github.com/Lord-Ram/skeleton-git" target="_blank" rel="noopener noreferrer">GitHub</a></td></tr>
+            <tr data-href="https://github.com/Lord-Ram/Tic-Tac-toe"><td>Tic Tac Toe</td><td>Game logic with modules and factory functions.</td><td><a href="https://github.com/Lord-Ram/Tic-Tac-toe" target="_blank" rel="noopener noreferrer">GitHub</a></td></tr>
+            <tr data-href="https://github.com/Lord-Ram/Odin-Project-Simple"><td>Sign Up Form</td><td>Form styling, validation and responsive layout.</td><td><a href="https://github.com/Lord-Ram/Odin-Project-Simple" target="_blank" rel="noopener noreferrer">GitHub</a></td></tr>
+            <tr data-href="https://github.com/Lord-Ram/Fox-Dashboard"><td>Dashboard</td><td>CSS Grid and Flexbox dashboard layout.</td><td><a href="https://github.com/Lord-Ram/Fox-Dashboard" target="_blank" rel="noopener noreferrer">GitHub</a></td></tr>
           </tbody>
         </table>
       </div>
@@ -406,10 +407,10 @@ footer{padding:34px 0 44px;text-align:center;color:var(--ink-3);font-size:.85rem
         <table>
           <thead class="caps"><tr><th>#</th><th>Task</th><th>Code</th><th>Output / Answer</th></tr></thead>
           <tbody>
-            <tr><td>HW 1</td><td>HTML page with 10 tags, each explained with my name and details.</td><td><a href="#">GitHub</a></td><td><a href="#">Screenshot / PDF</a></td></tr>
-            <tr><td>HW 2</td><td>About-me page using only HTML tags: headings, paragraph, nested <code>ul</code>/<code>ol</code> education lists, interesting topic with 5 images.</td><td><a href="#">GitHub</a></td><td><a href="#">Screenshot / PDF</a></td></tr>
-            <tr><td>HW 3</td><td>Page with all MDN HTML elements, each explained in my own words.</td><td><a href="#">GitHub</a></td><td><a href="#">Live page</a></td></tr>
-            <tr><td>HW 4</td><td>Odin Project: JavaScript Basics (Foundations) exercises.</td><td><a href="#">GitHub</a></td><td><a href="#">PPT / Drive</a></td></tr>
+            <tr><td>HW 1</td><td>HTML page with 10 tags, each explained with my name and details.</td><td><a href="https://github.com/Lord-Ram" target="_blank" rel="noopener noreferrer">GitHub</a></td><td><a href="https://github.com/Lord-Ram" target="_blank" rel="noopener noreferrer">Output</a></td></tr>
+            <tr><td>HW 2</td><td>About-me page using only HTML tags: headings, paragraph, nested <code>ul</code>/<code>ol</code> education lists, interesting topic with 5 images.</td><td><a href="assignments/html-tags-page.html" target="_blank" rel="noopener noreferrer">Code</a></td><td><a href="assignments/html-tags-page.html" target="_blank" rel="noopener noreferrer">Output</a></td></tr>
+            <tr><td>HW 3</td><td>Page with all MDN HTML elements, each explained in my own words.</td><td><a href="https://github.com/Lord-Ram" target="_blank" rel="noopener noreferrer">GitHub</a></td><td><a href="https://github.com/Lord-Ram" target="_blank" rel="noopener noreferrer">Live page</a></td></tr>
+            <tr><td>HW 4</td><td>Odin Project: JavaScript Basics (Foundations) exercises.</td><td><a href="https://github.com/Lord-Ram/Odin-Calculator" target="_blank" rel="noopener noreferrer">GitHub</a></td><td><a href="https://docs.google.com/presentation/d/1C59scHHgX_TIFMyYyUbAR7TCH3RRdQdX/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">Presentation</a></td></tr>
           </tbody>
         </table>
       </div>
@@ -420,27 +421,27 @@ footer{padding:34px 0 44px;text-align:center;color:var(--ink-3);font-size:.85rem
     <div class="wrap">
       <div class="head reveal"><h2>Certificates</h2><p>The certifications I've completed so far.</p></div>
 
-      <div class="row cert reveal"><h3>IBM Design</h3><p>Completed an IBM Design learning program.</p>
+      <div class="row cert reveal" data-href="IBMDesign20261007-20-35j9b1.pdf"><h3>IBM Design</h3><p>Completed an IBM Design learning program.</p>
         <a class="go caps" href="IBMDesign20261007-20-35j9b1.pdf" target="_blank" rel="noopener noreferrer">View &#8599;</a></div>
-      <div class="row cert reveal"><h3>AI Literacy Badge</h3><p>Foundational knowledge of artificial intelligence.</p>
+      <div class="row cert reveal" data-href="AILiteracy_Badge20261013-22-96zuzb.pdf"><h3>AI Literacy Badge</h3><p>Foundational knowledge of artificial intelligence.</p>
         <a class="go caps" href="AILiteracy_Badge20261013-22-96zuzb.pdf" target="_blank" rel="noopener noreferrer">View &#8599;</a></div>
-      <div class="row cert reveal"><h3>Endpoint Security</h3><p>Completed an Endpoint Security learning program.</p>
+      <div class="row cert reveal" data-href="EndpointSecurityUpdate20261013-22-j7qs07.pdf"><h3>Endpoint Security</h3><p>Completed an Endpoint Security learning program.</p>
         <a class="go caps" href="EndpointSecurityUpdate20261013-22-j7qs07.pdf" target="_blank" rel="noopener noreferrer">View &#8599;</a></div>
-      <div class="row cert reveal"><h3>Network Defense</h3><p>Completed a Network Defense learning program.</p>
+      <div class="row cert reveal" data-href="NetworkDefenseUpdate20261013-20-c8houj.pdf"><h3>Network Defense</h3><p>Completed a Network Defense learning program.</p>
         <div class="golinks"><a class="go caps" href="NetworkDefenseUpdate20261013-20-c8houj.pdf" target="_blank" rel="noopener noreferrer">Certificate &#8599;</a><a class="go caps" href="https://www.credly.com/badges/011a0a01-dfdc-4313-a9c2-757227fd9756/public_url" target="_blank" rel="noopener noreferrer">Badge &#8599;</a></div></div>
-      <div class="row cert reveal"><h3>Junior Cybersecurity Analyst</h3><p>Completed the Junior Cybersecurity Analyst program.</p>
+      <div class="row cert reveal" data-href="JuniorCybersecurityAnalystUpdate20261013-22-atod03.pdf"><h3>Junior Cybersecurity Analyst</h3><p>Completed the Junior Cybersecurity Analyst program.</p>
         <a class="go caps" href="JuniorCybersecurityAnalystUpdate20261013-22-atod03.pdf" target="_blank" rel="noopener noreferrer">View &#8599;</a></div>
-      <div class="row cert reveal"><h3>Networking Devices and Basic Configuration</h3><p>Completed a networking devices and configuration program.</p>
+      <div class="row cert reveal" data-href="NetworkingDevicesandBasicConfigUpdate20261013-22-bu7la5.pdf"><h3>Networking Devices and Basic Configuration</h3><p>Completed a networking devices and configuration program.</p>
         <a class="go caps" href="NetworkingDevicesandBasicConfigUpdate20261013-22-bu7la5.pdf" target="_blank" rel="noopener noreferrer">View &#8599;</a></div>
-      <div class="row cert reveal"><h3>Retrieval-Augmented Generation for Enhanced AI</h3><p>Completed a program on retrieval-augmented generation.</p>
+      <div class="row cert reveal" data-href="Retrieval-AugmentedGenerationforEnhancedAIOutputs_Badge20261013-20-in06lz.pdf"><h3>Retrieval-Augmented Generation for Enhanced AI</h3><p>Completed a program on retrieval-augmented generation.</p>
         <a class="go caps" href="Retrieval-AugmentedGenerationforEnhancedAIOutputs_Badge20261013-20-in06lz.pdf" target="_blank" rel="noopener noreferrer">View &#8599;</a></div>
-      <div class="row cert reveal"><h3>AI Ethics</h3><p>Completed an IBM course on the ethics of artificial intelligence.</p>
+      <div class="row cert reveal" data-href="https://skills.yourlearning.ibm.com/certificate/share/db54f2c6b5ewogICJvYmplY3RJZCIgOiAiQUxNLUNPVVJTRV80MDU4OTI3IiwKICAibGVhcm5lckNOVU0iIDogIjQ1Nzg5OTdSRUciLAogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIKfQb3b2d15d7c-10"><h3>AI Ethics</h3><p>Completed an IBM course on the ethics of artificial intelligence.</p>
         <a class="go caps" href="https://skills.yourlearning.ibm.com/certificate/share/db54f2c6b5ewogICJvYmplY3RJZCIgOiAiQUxNLUNPVVJTRV80MDU4OTI3IiwKICAibGVhcm5lckNOVU0iIDogIjQ1Nzg5OTdSRUciLAogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIKfQb3b2d15d7c-10" target="_blank" rel="noopener noreferrer">View &#8599;</a></div>
-      <div class="row cert reveal"><h3>AI Fundamentals</h3><p>Completed an IBM learning plan on artificial intelligence fundamentals.</p>
+      <div class="row cert reveal" data-href="https://skills.yourlearning.ibm.com/certificate/share/07f77840fdewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICI0NTc4OTk3UkVHIiwKICAib2JqZWN0SWQiIDogIlBMQU4tNzkxM0VFMURCMDMwIgp9c9f589810d-10"><h3>AI Fundamentals</h3><p>Completed an IBM learning plan on artificial intelligence fundamentals.</p>
         <a class="go caps" href="https://skills.yourlearning.ibm.com/certificate/share/07f77840fdewogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIsCiAgImxlYXJuZXJDTlVNIiA6ICI0NTc4OTk3UkVHIiwKICAib2JqZWN0SWQiIDogIlBMQU4tNzkxM0VFMURCMDMwIgp9c9f589810d-10" target="_blank" rel="noopener noreferrer">View &#8599;</a></div>
-      <div class="row cert reveal"><h3>Networking Basics</h3><p>Earned a digital badge for networking fundamentals.</p>
+      <div class="row cert reveal" data-href="https://www.credly.com/badges/721c8cce-03b7-48ba-a9f1-3164efa7c1c8/public_url"><h3>Networking Basics</h3><p>Earned a digital badge for networking fundamentals.</p>
         <a class="go caps" href="https://www.credly.com/badges/721c8cce-03b7-48ba-a9f1-3164efa7c1c8/public_url" target="_blank" rel="noopener noreferrer">Badge &#8599;</a></div>
-      <div class="row cert reveal"><h3>Networking Devices and Initial Configuration</h3><p>Earned a digital badge for networking devices and initial configuration.</p>
+      <div class="row cert reveal" data-href="https://www.credly.com/badges/a643ff92-70d8-422e-b66d-36d8b5930518/public_url"><h3>Networking Devices and Initial Configuration</h3><p>Earned a digital badge for networking devices and initial configuration.</p>
         <a class="go caps" href="https://www.credly.com/badges/a643ff92-70d8-422e-b66d-36d8b5930518/public_url" target="_blank" rel="noopener noreferrer">Badge &#8599;</a></div>
     </div>
   </section>
@@ -532,6 +533,13 @@ footer{padding:34px 0 44px;text-align:center;color:var(--ink-3);font-size:.85rem
     if (e.target.closest('[data-close]')) closeVideo();
   });
   addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) closeVideo(); });
+
+  // ---- Whole row/bar is clickable (opens in a new tab) ----
+  document.addEventListener('click', e => {
+    if (e.target.closest('a, button')) return;
+    const r = e.target.closest('[data-href]');
+    if (r) window.open(r.dataset.href, '_blank', 'noopener');
+  });
 
   // ---- Live clock ----
   const clkT = document.getElementById('time'), clkD = document.getElementById('date');
